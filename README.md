@@ -28,7 +28,7 @@ iverilog alu8bitS.v Alutest.v -o alu_struct
 iverilog alu8bitB.v Alutest.v -o alu_behav
 ```
 
-#Running the TestBench
+Running the TestBench
 ```bash
 #Also similar for alu_behav(vvp alu_behav). By running it will show output results and will generate a waveform VCD file which can be viewed with gtk wave
 vvp alu_struct
