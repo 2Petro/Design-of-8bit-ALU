@@ -17,7 +17,7 @@ The design is verified using a **testbench**, and further analyzed through **RTL
 
 ### Compile and Run Simulation (Icarus Verilog)
 
-Both the structural and behavioral versions can be simulated with **Icarus Verilog (`iverilog`)**:
+Both the structural and behavioral versions can be simulated with **Icarus Verilog (`iverilog`) / Quartz/QuestaSim**:
 
 ```bash
 # Structural ALU
