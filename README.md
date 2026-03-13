@@ -44,5 +44,50 @@ yosys -p "read_verilog alu8bitS.v; hierarchy -check; proc; opt; show -format svg
 yosys -p "read_verilog alu8bitS.v; synth; show -format svg -prefix synth"
 # The RTL and Synth will generate a svg file format can be opened with image viewer
 ```
+## Simulation, RTL Visualization, and Synthesis using QuestaSim
+
+The project can also be verified and analyzed using **QuestaSim** through its graphical interface.
+
+### Simulation Workflow
+
+1. **Create a new project** in the simulator environment.
+2. **Add the Verilog source files** to the project:
+   - `alu8bitS.v` (Structural implementation)
+   - `alu8bitB.v` (Behavioral implementation)
+   - `Alutest.v` (Testbench)
+3. **Compile the design files** within the project.
+4. **Start simulation** using the testbench module (`Alutest`).
+5. Open the **Waveform Viewer**.
+6. **Add signals** such as operands, control signals, and ALU outputs to the waveform window.
+7. Run the simulation to observe signal transitions and verify correct ALU functionality.
+
+The waveform viewer allows interactive inspection of signal behavior during simulation.
+
+---
+
+### RTL Visualization
+
+QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** representation of the design.
+
+1. After compiling the project, open the **design hierarchy viewer**.
+2. Select the ALU module from the hierarchy.
+3. Use the **RTL schematic viewer** to display the structural representation of the design.
+4. The viewer shows how different components such as logic blocks and interconnections form the ALU architecture.
+
+This graphical representation helps in understanding the internal structure of the design and verifying the connectivity between modules.
+
+---
+
+### Synthesis Visualization
+
+A synthesized representation of the ALU can also be inspected graphically.
+
+1. Load the synthesized version of the design in the project environment.
+2. Open the **synthesis or netlist viewer**.
+3. The tool displays the **gate-level implementation** generated from the RTL design.
+4. This schematic shows the logic gates and connections used to implement the ALU operations.
+
+Viewing the synthesized schematic helps analyze the final hardware structure produced from the Verilog design.
+
 
 
