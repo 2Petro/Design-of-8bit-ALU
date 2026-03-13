@@ -102,26 +102,14 @@ The waveform viewer is used to observe signal transitions and confirm that the A
 
 ### RTL
 
-The **Register Transfer Level (RTL)** representation illustrates the internal structure of the ALU at a high level.  
-RTL visualization helps verify how modules, combinational logic blocks, and data paths are connected within the design.
-
-These diagrams are generated from the Verilog source and provide insight into the logical organization of the ALU before synthesis.
-
 ![RTL Diagram](RTL/img1.png)
-
 ![RTL Diagram](RTL/img2.png)
 
 ---
 
 ### Synthesis
 
-After RTL verification, the design is synthesized to obtain a **gate-level implementation**.  
-Synthesis converts the high-level RTL description into a network of logic gates and interconnections that can be implemented in hardware.
-
-The synthesized schematic illustrates how arithmetic and logical operations are realized using basic logic elements such as gates and multiplexers.
-
 ![Synthesis Result](synth/img1.png)
-
 ![Synthesis Result](synth/img2.png)
 
 ---
