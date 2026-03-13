@@ -98,21 +98,15 @@ The waveform viewer is used to observe signal transitions and confirm that the A
 
 ![Testbench Waveform](Testbench/img1.png)
 
----
-
 ### RTL
 
 ![RTL Diagram](RTL/img1.png)
 ![RTL Diagram](RTL/img2.png)
 
----
-
 ### Synthesis
 
 ![Synthesis Result](synth/img1.png)
 ![Synthesis Result](synth/img2.png)
-
----
 
 ### Power & Timing Analysis
 
@@ -129,5 +123,22 @@ The general workflow includes:
 These analyses provide insight into how the ALU behaves in terms of **timing performance and power consumption** when implemented on hardware.
 
 ![Timing Analysis](analysis/img1.png)
-
 ![Power Analysis](analysis/img2.png)
+
+
+---
+## Tools Used
+
+- **Icarus Verilog (iverilog)** – Open-source Verilog compiler used to compile and simulate the ALU design with the testbench.  
+- **GTKWave** – Waveform viewer used to visualize simulation output signals from generated VCD files.  
+- **Yosys** – Open-source synthesis framework used to generate RTL schematics and synthesized gate-level representations of the design.  
+- **Quartus & QuestaSim** – FPGA and HDL simulation environments used for graphical compilation, RTL/synthesis inspection, power/timing analysis, and waveform viewing.
+---
+
+## Report
+
+A detailed report describing the **architecture, design methodology, RTL implementation, synthesis results, and verification of the 8-bit ALU** is available below:
+
+[📄 Digital 8-bit ALU Design Report](report/Digital-alu8bit-design.pdf)
+
+---
