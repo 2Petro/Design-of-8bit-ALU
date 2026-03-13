@@ -8,6 +8,13 @@ The ALU in this project is implemented using two modeling techniques:
 
 - **Structural Modeling** – The ALU is constructed by interconnecting lower-level hardware modules such as logic gates, adders, and multiplexers.
 - **Behavioral Modeling** – The ALU functionality is described using high-level behavioral constructs in Verilog.
+The 8-bit ALU consists of **five main blocks**:
+
+1. **8-bit Arithmetic Unit** – Performs arithmetic operations and acts as a signed comparator.  
+2. **8-bit Logic Unit** – Executes logical operations such as AND, OR, XOR, and NOT.  
+3. **8-bit Shifter Unit** – Performs shift operations (logical/arithmetic left/right shifts).  
+4. **8-bit Register** – Stores intermediate results and operands.  
+5. **Two 8-bit 2-to-1 Multiplexers** – Select between different inputs for the ALU operations.
 
 The design is verified using a **testbench**, and further analyzed through **RTL visualization, synthesis, and timing/power analysis**.
 
