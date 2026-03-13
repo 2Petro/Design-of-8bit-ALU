@@ -63,7 +63,7 @@ The project can also be verified and analyzed using **QuestaSim** through its gr
 
 The waveform viewer allows interactive inspection of signal behavior during simulation.
 
-### RTL Visualization
+### RTL
 
 QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** representation of the design.
 
@@ -74,7 +74,7 @@ QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** 
 
 This graphical representation helps in understanding the internal structure of the design and verifying the connectivity between modules.
 
-### Synthesis Visualization
+### Synthesis
 
 A synthesized representation of the ALU can also be inspected graphically.
 
@@ -87,4 +87,59 @@ Viewing the synthesized schematic helps analyze the final hardware structure pro
 
 ---
 
+## Results
 
+### Testbench
+
+The functionality of the 8-bit ALU is verified using a dedicated **Verilog testbench**.  
+Different input vectors are applied to the operands and control signals in order to exercise the supported ALU operations. The expected results are compared with the simulation outputs to verify the correctness of the design.
+
+The waveform viewer is used to observe signal transitions and confirm that the ALU produces the correct results for each operation.
+
+![Testbench Waveform](Testbench/img1.png)
+
+---
+
+### RTL
+
+The **Register Transfer Level (RTL)** representation illustrates the internal structure of the ALU at a high level.  
+RTL visualization helps verify how modules, combinational logic blocks, and data paths are connected within the design.
+
+These diagrams are generated from the Verilog source and provide insight into the logical organization of the ALU before synthesis.
+
+![RTL Diagram](RTL/img1.png)
+
+![RTL Diagram](RTL/img2.png)
+
+---
+
+### Synthesis
+
+After RTL verification, the design is synthesized to obtain a **gate-level implementation**.  
+Synthesis converts the high-level RTL description into a network of logic gates and interconnections that can be implemented in hardware.
+
+The synthesized schematic illustrates how arithmetic and logical operations are realized using basic logic elements such as gates and multiplexers.
+
+![Synthesis Result](synth/img1.png)
+
+![Synthesis Result](synth/img2.png)
+
+---
+
+### Power & Timing Analysis
+
+Power and timing analysis are performed using **Quartus** after the design is synthesized.
+
+The general workflow includes:
+
+1. Creating a project in Quartus and adding the Verilog source files.
+2. Compiling the design to generate the synthesized netlist.
+3. Running the **Timing Analyzer** to evaluate the propagation delays and critical paths within the ALU.
+4. Performing **Power Analysis** to estimate the power consumption based on switching activity and resource utilization.
+5. Reviewing the generated reports and graphical summaries to evaluate performance and efficiency of the design.
+
+These analyses provide insight into how the ALU behaves in terms of **timing performance and power consumption** when implemented on hardware.
+
+![Timing Analysis](analysis/img1.png)
+
+![Power Analysis](analysis/img2.png)
