@@ -63,8 +63,6 @@ The project can also be verified and analyzed using **QuestaSim** through its gr
 
 The waveform viewer allows interactive inspection of signal behavior during simulation.
 
----
-
 ### RTL Visualization
 
 QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** representation of the design.
@@ -75,8 +73,6 @@ QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** 
 4. The viewer shows how different components such as logic blocks and interconnections form the ALU architecture.
 
 This graphical representation helps in understanding the internal structure of the design and verifying the connectivity between modules.
-
----
 
 ### Synthesis Visualization
 
@@ -89,5 +85,6 @@ A synthesized representation of the ALU can also be inspected graphically.
 
 Viewing the synthesized schematic helps analyze the final hardware structure produced from the Verilog design.
 
+---
 
 
