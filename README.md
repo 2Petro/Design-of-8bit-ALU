@@ -10,3 +10,20 @@ The ALU in this project is implemented using two modeling techniques:
 - **Behavioral Modeling** – The ALU functionality is described using high-level behavioral constructs in Verilog.
 
 The design is verified using a **testbench**, and further analyzed through **RTL visualization, synthesis, and timing/power analysis**.
+
+---
+
+## Usage
+
+### Compile and Run Simulation (Icarus Verilog)
+
+Both the structural and behavioral versions can be simulated with **Icarus Verilog (`iverilog`)**:
+
+```bash
+# Structural ALU
+iverilog alu8bitS.v Alutest.v -o alu_struct
+vvp alu_struct
+
+# Behavioral ALU
+iverilog alu8bitB.v Alutest.v -o alu_behav
+vvp alu_behav
