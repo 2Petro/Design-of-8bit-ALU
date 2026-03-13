@@ -8,7 +8,8 @@ The ALU in this project is implemented using two modeling techniques:
 
 - **Structural Modeling** – The ALU is constructed by interconnecting lower-level hardware modules such as logic gates, adders, and multiplexers.
 - **Behavioral Modeling** – The ALU functionality is described using high-level behavioral constructs in Verilog.
-The 8-bit ALU consists of **five main blocks**:
+  
+- The 8-bit ALU consists of **five main blocks**:
 
 1. **8-bit Arithmetic Unit** – Performs arithmetic operations and acts as a signed comparator.  
 2. **8-bit Logic Unit** – Executes logical operations such as AND, OR, XOR, and NOT.  
@@ -17,6 +18,23 @@ The 8-bit ALU consists of **five main blocks**:
 5. **Two 8-bit 2-to-1 Multiplexers** – Select between different inputs for the ALU operations.
 
 The design is verified using a **testbench**, and further analyzed through **RTL visualization, synthesis, and timing/power analysis**.
+
+---
+## Operations 
+
+| S0 | S1 | S2 | S3 | F | Description |
+|:---:|:---:|:---:|:---:|:---:|:---|
+| 0 | 0 | 0 | 0 | A+B | Add |
+| 0 | 0 | 0 | 1 | A-B | Subtract |
+| 0 | 0 | 1 | 1 | B'+1 | 2's complement |
+| 1 | 0 | 0 | 0 | A and B | And |
+| 1 | 0 | 1 | 0 | A xor B | Xor |
+| 1 | 0 | 0 | 1 | A or B | Or |
+| 1 | 0 | 1 | 1 | B' | 1's complement |
+| 1 | 1 | 0 | 0 | A>> | Right rotate |
+| 1 | 1 | 1 | 0 | <<A | Left rotate |
+| 1 | 1 | 0 | 1 | A> | Right shift |
+| 1 | 1 | 1 | 1 | <B | Left shift |
 
 ---
 
