@@ -1,4 +1,4 @@
-# 8-bit ALU Design in Verilog HDL
+# ALU 8-bit Design in Verilog HDL
 
 ## Overview
 This project presents the design and implementation of an **8-bit Arithmetic Logic Unit (ALU)** using **Verilog HDL**.  
@@ -9,7 +9,7 @@ The ALU in this project is implemented using two modeling techniques:
 - **Structural Modeling** – The ALU is constructed by interconnecting lower-level hardware modules such as logic gates, adders, and multiplexers.
 - **Behavioral Modeling** – The ALU functionality is described using high-level behavioral constructs in Verilog.
   
-- The 8-bit ALU consists of **five main blocks**:
+The 8-bit ALU consists of **five main blocks**:
 
 1. **8-bit Arithmetic Unit** – Performs arithmetic operations and acts as a signed comparator.  
 2. **8-bit Logic Unit** – Executes logical operations such as AND, OR, XOR, and NOT.  
