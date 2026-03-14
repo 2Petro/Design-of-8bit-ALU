@@ -88,7 +88,7 @@ The project can also be verified and analyzed using **QuestaSim** through its gr
 
 The waveform viewer allows interactive inspection of signal behavior during simulation.
 
-### RTL
+### RTL Diagram 
 
 QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** representation of the design.
 
@@ -99,7 +99,7 @@ QuestaSim provides the ability to inspect the **Register Transfer Level (RTL)** 
 
 This graphical representation helps in understanding the internal structure of the design and verifying the connectivity between modules.
 
-### Synthesis
+### Synthesis using questasim
 
 A synthesized representation of the ALU can also be inspected graphically.
 
@@ -121,17 +121,20 @@ Different input vectors are applied to the operands and control signals in order
 
 The waveform viewer is used to observe signal transitions and confirm that the ALU produces the correct results for each operation.
 
-![Testbench Waveform](Testbench/img1.png)
+![Testbench Waveform](results/Testbench/output-tb.jpg)
+![Testbench Waveform](results/Testbench/waveform-tb.jpg)
 
 ### RTL
 
-![RTL Diagram](RTL/img1.png)
-![RTL Diagram](RTL/img2.png)
+![RTL Diagram](results/RTL/Structural_alu8bit_RTL.png)
+![RTL Diagram](results/RTL/Structural_alu8bit_RTL_ex.png)
+![RTL Diagram](results/RTL/RTL.svg)
+![RTL Diagram](results/RTL/RTL-D.svg)
+
 
 ### Synthesis
 
-![Synthesis Result](synth/img1.png)
-![Synthesis Result](synth/img2.png)
+![Synthesis Result](results/SYNTH/Structural_alu8bit_synth_techmap.png)
 
 ### Power & Timing Analysis
 
@@ -147,9 +150,13 @@ The general workflow includes:
 
 These analyses provide insight into how the ALU behaves in terms of **timing performance and power consumption** when implemented on hardware.
 
-![Timing Analysis](analysis/img1.png)
-![Power Analysis](analysis/img2.png)
-
+![Power & Timing Analysis 1](results/Power&Timing/pwr_tim1.jpg)  
+![Power & Timing Analysis 2](results/Power&Timing/pwr_tim2.jpg)  
+![Power & Timing Analysis 3](results/Power&Timing/pwr_tim3.jpg)  
+![Power & Timing Analysis 4](results/Power&Timing/pwr_tim4.jpg)  
+![Power & Timing Analysis 5](results/Power&Timing/pwr_tim5.jpg)  
+![Power & Timing Analysis 6](results/Power&Timing/pwr_tim6.jpg)  
+![Power & Timing Analysis 7](results/Power&Timing/pwr_tim7.jpg)
 
 ---
 ## Tools Used
